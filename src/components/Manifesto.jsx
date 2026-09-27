@@ -8,7 +8,7 @@ export default function Manifesto() {
   const containerRef = useRef(null)
   const paragraphRef = useRef(null)
 
-  const words = `We believe retail counter operations should not be trapped in manual registers and chaotic ledgers. We architect autonomous intelligent agents that run store operations seamlessly in real-time, uniting hardware soundboxes, instant UPI verification, predictive procurement, and automated financial reconciliation.`.split(' ')
+  const words = `We believe retail counter operations should not be trapped in manual registers and chaotic ledgers. We architect autonomous intelligent agents that run store operations.`.split(' ')
 
   useEffect(() => {
     const ctx = gsap.context(() => {
