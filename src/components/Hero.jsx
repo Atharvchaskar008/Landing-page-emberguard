@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { Sparkles, ArrowDown } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import gsap from 'gsap'
 
 export default function Hero() {
@@ -115,25 +115,17 @@ export default function Hero() {
           Pushing the boundaries of autonomous retail intelligence. Deploy 24/7 AI agents for real-time sales monitoring, UPI fraud protection, and instant khata reconciliation for ambitious stores and restaurants.
         </p>
 
-        {/* Action Buttons */}
+        {/* Action Button: Single White Launch App Button */}
         <div
           ref={btnsRef}
-          className="mt-10 flex flex-wrap items-center justify-center gap-4 z-20 will-change-transform"
+          className="mt-10 flex items-center justify-center z-20 will-change-transform"
         >
           <a
-            href="#workforce"
-            className="px-8 py-4 bg-[var(--sky)] text-[var(--navy)] rounded-full font-sans font-semibold hover:bg-[var(--navy)] hover:text-white transition-all duration-500 cursor-pointer shadow-[0_8px_25px_rgba(56,189,248,0.35)] hover:shadow-[0_10px_30px_rgba(0,41,112,0.25)] transform hover:-translate-y-0.5 inline-flex items-center gap-2"
+            href="#contact"
+            className="px-9 py-4 bg-white text-[var(--ink)] border border-[var(--line)] rounded-full font-sans font-medium hover:border-[var(--sky)] hover:text-[var(--navy)] hover:shadow-md transition-all duration-300 cursor-pointer shadow-sm inline-flex items-center gap-2.5 group"
           >
-            <Sparkles className="w-4 h-4 text-[var(--navy)] group-hover:text-white" />
-            Explore AI Workforce
-          </a>
-
-          <a
-            href="#capabilities"
-            className="px-8 py-4 bg-[var(--card)] text-[var(--ink)] border border-[var(--line)] rounded-full font-sans font-medium hover:bg-white hover:border-[var(--sky)]/50 hover:text-[var(--navy)] transition-all duration-500 cursor-pointer shadow-sm inline-flex items-center gap-2"
-          >
-            Core Capabilities
-            <ArrowDown className="w-4 h-4 text-[var(--muted)]" />
+            Launch App
+            <ArrowUpRight className="w-4 h-4 text-[var(--muted)] group-hover:text-[var(--navy)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
           </a>
         </div>
       </div>
