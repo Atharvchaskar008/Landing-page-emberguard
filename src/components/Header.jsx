@@ -97,7 +97,7 @@ export default function Header() {
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
-              className="hidden md:inline-flex items-center justify-center text-xs uppercase tracking-wider font-semibold bg-[var(--sky)] text-white hover:bg-[var(--navy)] hover:text-white transition-all px-6 py-2.5 rounded-full shadow-[0_4px_16px_rgba(0,186,242,0.35)] hover:shadow-[0_4px_20px_rgba(0,41,112,0.25)]"
+              className="hidden md:inline-flex items-center justify-center text-xs uppercase tracking-wider font-semibold bg-[var(--sky)] text-[var(--navy)] hover:bg-[var(--navy)] hover:text-white transition-all px-6 py-2.5 rounded-full shadow-[0_4px_16px_rgba(56,189,248,0.3)] hover:shadow-[0_4px_20px_rgba(0,41,112,0.25)]"
             >
               Launch App
             </a>

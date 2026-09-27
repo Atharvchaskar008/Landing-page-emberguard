@@ -2,7 +2,7 @@
 
 :root {
   --navy: #002970;
-  --sky: #00baf2;
+  --sky: #38bdf8;
   --wa-header: #075e54;
   --wa: #25d366;
   --wallpaper: #ece5dd;
@@ -19,13 +19,13 @@
   --brand: linear-gradient(115deg, #001433 0%, #002970 46%, #0456a8 100%);
   --brand-rail: linear-gradient(180deg, #001433 0%, #002970 62%, #01356e 100%);
   --sheen: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
-  --sky-btn: linear-gradient(180deg, #3ad0ff 0%, #0095c8 100%);
+  --sky-btn: linear-gradient(180deg, #7dd3fc 0%, #38bdf8 100%);
   --ok-btn: linear-gradient(180deg, #34d399 0%, #059669 100%);
 }
 
 @theme {
   --color-navy: #002970;
-  --color-sky: #00baf2;
+  --color-sky: #38bdf8;
   --color-wa-header: #075e54;
   --color-wa: #25d366;
   --color-wallpaper: #ece5dd;

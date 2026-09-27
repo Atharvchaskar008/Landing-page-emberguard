@@ -122,9 +122,9 @@ export default function Hero() {
         >
           <a
             href="#workforce"
-            className="px-8 py-4 bg-[var(--sky)] text-white rounded-full font-sans font-medium hover:bg-[var(--navy)] hover:text-white transition-all duration-500 cursor-pointer shadow-[0_8px_25px_rgba(0,186,242,0.35)] hover:shadow-[0_10px_30px_rgba(0,41,112,0.25)] transform hover:-translate-y-0.5 inline-flex items-center gap-2"
+            className="px-8 py-4 bg-[var(--sky)] text-[var(--navy)] rounded-full font-sans font-semibold hover:bg-[var(--navy)] hover:text-white transition-all duration-500 cursor-pointer shadow-[0_8px_25px_rgba(56,189,248,0.35)] hover:shadow-[0_10px_30px_rgba(0,41,112,0.25)] transform hover:-translate-y-0.5 inline-flex items-center gap-2"
           >
-            <Sparkles className="w-4 h-4" />
+            <Sparkles className="w-4 h-4 text-[var(--navy)] group-hover:text-white" />
             Explore AI Workforce
           </a>
 
