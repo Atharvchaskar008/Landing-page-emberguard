@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="w-full md:w-1/3 flex md:justify-end z-10">
           <a
             href="mailto:contact@cortexretail.ai"
-            className="group relative flex items-center justify-center w-40 h-40 md:w-48 md:h-48 rounded-full bg-[var(--navy)] text-white hover:scale-105 transition-all duration-500 cursor-pointer shadow-[0_10px_35px_rgba(0,41,112,0.25)]"
+            className="group relative flex items-center justify-center w-40 h-40 md:w-48 md:h-48 rounded-full bg-[var(--sky)] text-white hover:scale-105 transition-all duration-500 cursor-pointer shadow-[0_10px_35px_rgba(0,186,242,0.35)]"
           >
-            <span className="absolute inset-0 bg-[var(--sky)] rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-500 ease-out z-0" />
+            <span className="absolute inset-0 bg-[var(--navy)] rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-500 ease-out z-0" />
             <span className="font-sans font-medium text-lg relative z-10 text-white transition-colors duration-300 flex items-center gap-2">
               Launch App
               <ArrowUpRight className="w-5 h-5" />
