@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Menu, X, ArrowRight } from 'lucide-react'
 import gsap from 'gsap'
+import CortexLogo from './CortexLogo'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -66,13 +67,9 @@ export default function Header() {
           <a
             href="#hero"
             onClick={(e) => handleNavClick(e, '#hero')}
-            className="flex-shrink-0 flex items-center gap-2 cursor-pointer group"
+            className="flex-shrink-0 flex items-center cursor-pointer group"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="135" height="28" viewBox="0 0 135 28" role="img" aria-label="Cortex">
-              <path d="M2 14 14 2l12 12-12 12L2 14Z" fill="none" stroke="var(--sky)" strokeWidth="2.5" />
-              <path d="M9 14h10M14 9v10" stroke="var(--navy)" strokeWidth="2.5" strokeLinecap="round" />
-              <text x="36" y="20" fill="var(--navy)" fontFamily="ui-sans-serif, sans-serif" fontSize="18" fontWeight="700" letterSpacing="3">CORTEX</text>
-            </svg>
+            <CortexLogo className="h-5 w-auto group-hover:scale-105 transition-transform" />
           </a>
 
           {/* Desktop Nav */}

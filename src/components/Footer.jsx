@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowUpRight, ShieldCheck, Radio } from 'lucide-react'
+import CortexLogo from './CortexLogo'
 
 export default function Footer() {
   return (
@@ -29,13 +30,7 @@ export default function Footer() {
       <div className="px-6 md:px-24 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 mb-24 z-10 relative">
         {/* Brand Col */}
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="135" height="28" viewBox="0 0 135 28" role="img" aria-label="Cortex">
-              <path d="M2 14 14 2l12 12-12 12L2 14Z" fill="none" stroke="var(--sky)" strokeWidth="2.5" />
-              <path d="M9 14h10M14 9v10" stroke="var(--navy)" strokeWidth="2.5" strokeLinecap="round" />
-              <text x="36" y="20" fill="var(--navy)" fontFamily="ui-sans-serif, sans-serif" fontSize="18" fontWeight="700" letterSpacing="3">CORTEX</text>
-            </svg>
-          </div>
+          <CortexLogo className="h-5 w-auto" />
           <p className="text-[var(--muted)] font-sans text-sm leading-relaxed max-w-xs">
             Autonomous store workforce &amp; command center built for retail counters, multi-branch stores, and restaurants.
           </p>
