@@ -14,7 +14,7 @@ export default function Manifesto() {
     const ctx = gsap.context(() => {
       const wordElements = paragraphRef.current.querySelectorAll('.manifesto-word')
       gsap.to(wordElements, {
-        color: 'rgba(255, 255, 255, 1)',
+        color: 'rgba(15, 23, 42, 1)',
         stagger: 0.1,
         ease: 'none',
         scrollTrigger: {
@@ -33,9 +33,9 @@ export default function Manifesto() {
     <section
       ref={containerRef}
       id="manifesto"
-      className="w-full bg-[#050505] text-white py-32 md:py-48 px-6 md:px-24 flex flex-col items-center justify-center border-t border-white/5 relative"
+      className="w-full bg-[var(--canvas)] text-[var(--ink)] py-32 md:py-48 px-6 md:px-24 flex flex-col items-center justify-center border-t border-[var(--line)] relative"
     >
-      <span className="text-xs font-mono text-[#3B82F6] uppercase tracking-[0.3em] mb-12 text-center border border-[#3B82F6]/30 px-4 py-1.5 rounded-full bg-[#3B82F6]/5">
+      <span className="text-xs font-mono text-[var(--navy)] uppercase tracking-[0.3em] mb-12 text-center border border-[var(--navy)]/20 px-4 py-1.5 rounded-full bg-[var(--navy)]/5">
         Autonomous Retail Manifesto
       </span>
 
@@ -46,7 +46,7 @@ export default function Manifesto() {
         {words.map((word, idx) => (
           <span
             key={idx}
-            className="manifesto-word text-white/10 transition-colors duration-300 pointer-events-none"
+            className="manifesto-word text-[var(--muted)]/20 transition-colors duration-300 pointer-events-none"
           >
             {word}
           </span>

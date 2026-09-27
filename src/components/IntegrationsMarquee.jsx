@@ -30,20 +30,20 @@ export default function IntegrationsMarquee() {
   const marqueeItems = [...integrations, ...integrations]
 
   return (
-    <section id="integrations" className="w-full bg-[#050505] py-24 md:py-32 overflow-hidden flex flex-col items-center justify-center border-t border-white/5 relative">
+    <section id="integrations" className="w-full bg-[var(--canvas)] py-24 md:py-32 overflow-hidden flex flex-col items-center justify-center border-t border-[var(--line)] relative">
       {/* Side gradient edge fades */}
-      <div className="absolute inset-y-0 left-0 w-24 md:w-64 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-24 md:w-64 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-y-0 left-0 w-24 md:w-64 bg-gradient-to-r from-[var(--canvas)] to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-24 md:w-64 bg-gradient-to-l from-[var(--canvas)] to-transparent z-10 pointer-events-none" />
 
       {/* Header stated clearly above our integrations */}
       <div className="flex flex-col items-center text-center px-4 mb-16 relative z-20">
-        <span className="text-xs font-mono text-[#3B82F6] uppercase tracking-[0.3em] mb-4 border border-[#3B82F6]/30 px-3.5 py-1 rounded-full bg-[#3B82F6]/5">
+        <span className="text-xs font-mono text-[var(--navy)] uppercase tracking-[0.3em] mb-4 border border-[var(--navy)]/20 px-3.5 py-1 rounded-full bg-[var(--navy)]/5">
           Our Integrations
         </span>
-        <h2 className="text-3xl md:text-5xl font-serif text-white tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-serif text-[var(--ink)] tracking-tight">
           Connected with essential retail rails &amp; channels
         </h2>
-        <p className="text-sm md:text-base text-white/50 font-sans mt-3 max-w-xl">
+        <p className="text-sm md:text-base text-[var(--muted)] font-sans mt-3 max-w-xl">
           Cortex links directly into your existing hardware soundboxes, messaging channels, and payment terminals without replacing your counter setup.
         </p>
       </div>
@@ -54,16 +54,16 @@ export default function IntegrationsMarquee() {
           {marqueeItems.map((item, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 px-6 py-4 rounded-2xl bg-[#0A0A0A] border border-white/15 hover:border-white/40 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)] group cursor-default"
+              className="flex items-center gap-4 px-6 py-4 rounded-2xl bg-[var(--card)] border border-[var(--line)] hover:border-[var(--sky)]/50 transition-all duration-300 shadow-[0_4px_16px_rgba(15,23,42,0.05)] hover:shadow-[0_8px_24px_rgba(0,41,112,0.08)] group cursor-default"
             >
               <div className="flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                 {item.logo}
               </div>
               <div className="flex flex-col text-left">
-                <span className="text-base md:text-lg font-serif text-white/90 group-hover:text-white transition-colors">
+                <span className="text-base md:text-lg font-serif text-[var(--ink)] group-hover:text-[var(--navy)] transition-colors">
                   {item.name}
                 </span>
-                <span className="text-xs font-mono text-[#3B82F6] uppercase tracking-wider">
+                <span className="text-xs font-mono text-[var(--sky)] uppercase tracking-wider">
                   {item.detail}
                 </span>
               </div>

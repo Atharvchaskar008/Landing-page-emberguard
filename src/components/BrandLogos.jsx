@@ -9,14 +9,14 @@ export const PhonePeLogo = ({ className = "h-8 w-auto" }) => (
     <path d="M41 18H33V28H28C24.5 28 22 30.5 22 34C22 37.5 24.5 40 28 40H29.5L20 54H29L38.5 40V33H41V28H38.5V23H41V18Z" fill="#5F259F" />
     <path d="M33 33V23H28C26.5 23 25.5 24 25.5 25.5C25.5 27 26.5 28 28 28H33V33Z" fill="#5F259F" opacity="0.1" />
     {/* PhonePe Wordmark */}
-    <text x="80" y="47" fill="#FFFFFF" fontFamily="sans-serif" fontSize="28" fontWeight="700" letterSpacing="-0.5">PhonePe</text>
+    <text x="80" y="47" fill="#5F259F" fontFamily="sans-serif" fontSize="28" fontWeight="700" letterSpacing="-0.5">PhonePe</text>
   </svg>
 )
 
 // Authentic Official NPCI UPI Vector Logo
 export const UpiLogo = ({ className = "h-7 w-auto" }) => (
   <svg className={`${className} flex-shrink-0`} viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="160" height="50" rx="8" fill="#FFFFFF" />
+    <rect width="160" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
     {/* Official NPCI Green & Orange Triangles */}
     <path d="M25 10L10 40H22L37 10H25Z" fill="#097939" />
     <path d="M39 10L29 30H41L51 10H39Z" fill="#ED752E" />
@@ -78,7 +78,7 @@ export const PineLabsLogo = ({ className = "h-6 w-auto" }) => (
   <svg className={`${className} flex-shrink-0`} viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M14 6L22 22H6L14 6Z" fill="#00A859" />
     <circle cx="14" cy="26" r="2.5" fill="#00A859" />
-    <text x="28" y="21" fill="#FFFFFF" fontFamily="sans-serif" fontSize="14" fontWeight="800" letterSpacing="0.5">PINE LABS</text>
+    <text x="28" y="21" fill="#002970" fontFamily="sans-serif" fontSize="14" fontWeight="800" letterSpacing="0.5">PINE LABS</text>
   </svg>
 )
 
@@ -93,7 +93,7 @@ export const TallyLogo = ({ className = "h-6 w-auto" }) => (
 // Authentic GSTIN Compliance Emblem
 export const GstinLogo = ({ className = "w-7 h-7" }) => (
   <svg className={`${className} flex-shrink-0`} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="46" fill="#0D1525" stroke="#3B82F6" strokeWidth="3" />
+    <circle cx="50" cy="50" r="46" fill="#002970" stroke="#00BAF2" strokeWidth="3" />
     <circle cx="50" cy="50" r="34" stroke="#10B981" strokeWidth="2" strokeDasharray="4 4" fill="none" />
     <text x="50" y="57" textAnchor="middle" fill="#FFFFFF" fontFamily="sans-serif" fontSize="20" fontWeight="900">GST</text>
   </svg>

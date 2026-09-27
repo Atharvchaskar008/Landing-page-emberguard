@@ -81,14 +81,14 @@ export default function Hero() {
         ref={bgGlowRef}
         className="absolute -inset-12 z-0 pointer-events-none hero-field"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/40 via-[#050505]/10 to-[#050505]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.08)_0%,transparent_70%)]" />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#3B82F6]/5 blur-[160px] rounded-full pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--canvas)]/40 via-[var(--canvas)]/10 to-[var(--canvas)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,186,242,0.1)_0%,transparent_70%)]" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[var(--sky)]/10 blur-[160px] rounded-full pointer-events-none" />
       </div>
 
       <div className="relative z-10 w-full flex flex-col items-center justify-center max-w-6xl mx-auto">
         {/* Main Heading with Stagger Animation */}
-        <h1 className="text-[14vw] md:text-[7.5vw] font-serif leading-[0.9] tracking-tight text-white max-w-[95vw] md:max-w-6xl mx-auto flex flex-col items-center mix-blend-difference mb-6">
+        <h1 className="text-[14vw] md:text-[7.5vw] font-serif leading-[0.9] tracking-tight text-[var(--ink)] max-w-[95vw] md:max-w-6xl mx-auto flex flex-col items-center mb-6">
           <div className="overflow-hidden pb-4 -mb-4">
             <div ref={line1Ref} className="will-change-transform pt-4">
               We automate
@@ -99,7 +99,7 @@ export default function Hero() {
               ref={line2Ref}
               className="will-change-transform pt-4 flex items-center justify-center md:gap-6"
             >
-              <span className="italic text-white/50 mr-3 md:mr-6 font-serif">
+              <span className="italic text-[var(--muted)] mr-3 md:mr-6 font-serif">
                 retail
               </span>{' '}
               operations.
@@ -110,7 +110,7 @@ export default function Hero() {
         {/* Description */}
         <p
           ref={descRef}
-          className="text-lg md:text-2xl text-white/60 max-w-3xl mt-8 font-sans font-light leading-relaxed px-4 will-change-transform"
+          className="text-lg md:text-2xl text-[var(--muted)] max-w-3xl mt-8 font-sans font-light leading-relaxed px-4 will-change-transform"
         >
           Pushing the boundaries of autonomous retail intelligence. Deploy 24/7 AI agents for real-time sales monitoring, UPI fraud protection, and instant khata reconciliation for ambitious stores and restaurants.
         </p>
@@ -122,7 +122,7 @@ export default function Hero() {
         >
           <a
             href="#workforce"
-            className="px-8 py-4 bg-white text-black rounded-full font-sans font-medium hover:bg-[#3B82F6] hover:text-white transition-all duration-500 cursor-pointer shadow-[0_0_40px_rgba(255,255,255,0.18)] hover:shadow-[0_0_40px_rgba(59,130,246,0.5)] transform hover:-translate-y-0.5 inline-flex items-center gap-2"
+            className="px-8 py-4 bg-[var(--navy)] text-white rounded-full font-sans font-medium hover:bg-[var(--sky)] hover:text-white transition-all duration-500 cursor-pointer shadow-[0_10px_30px_rgba(0,41,112,0.22)] hover:shadow-[0_10px_35px_rgba(0,186,242,0.35)] transform hover:-translate-y-0.5 inline-flex items-center gap-2"
           >
             <Sparkles className="w-4 h-4" />
             Explore AI Workforce
@@ -130,10 +130,10 @@ export default function Hero() {
 
           <a
             href="#capabilities"
-            className="px-8 py-4 bg-transparent text-white border border-white/20 rounded-full font-sans font-medium hover:bg-white/10 hover:border-white/40 transition-all duration-500 cursor-pointer inline-flex items-center gap-2"
+            className="px-8 py-4 bg-[var(--card)] text-[var(--ink)] border border-[var(--line)] rounded-full font-sans font-medium hover:bg-white hover:border-[var(--sky)]/50 hover:text-[var(--navy)] transition-all duration-500 cursor-pointer shadow-sm inline-flex items-center gap-2"
           >
             Core Capabilities
-            <ArrowDown className="w-4 h-4 text-white/60" />
+            <ArrowDown className="w-4 h-4 text-[var(--muted)]" />
           </a>
         </div>
       </div>

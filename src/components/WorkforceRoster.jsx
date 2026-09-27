@@ -12,7 +12,7 @@ export default function WorkforceRoster() {
   const agents = [
     {
       id: '01',
-      icon: <Activity className="w-6 h-6 text-[#3B82F6]" />,
+      icon: <Activity className="w-6 h-6 text-[var(--navy)]" />,
       name: 'Priya',
       role: 'Revenue Guardian',
       mission: 'Real-time sales anomaly detection, counter revenue spikes, and automated channel telemetry.',
@@ -22,7 +22,7 @@ export default function WorkforceRoster() {
     },
     {
       id: '02',
-      icon: <ShieldCheck className="w-6 h-6 text-[#3B82F6]" />,
+      icon: <ShieldCheck className="w-6 h-6 text-[var(--navy)]" />,
       name: 'Aman',
       role: 'Payment Shield',
       mission: 'Live UPI webhook verification, fake payment screenshot interception, and instant audio hold alarms.',
@@ -32,7 +32,7 @@ export default function WorkforceRoster() {
     },
     {
       id: '03',
-      icon: <Boxes className="w-6 h-6 text-[#3B82F6]" />,
+      icon: <Boxes className="w-6 h-6 text-[var(--navy)]" />,
       name: 'Vikram',
       role: 'Procurement AI',
       mission: 'Predictive stock replenishment, vendor rate comparison, and automated purchase orders.',
@@ -42,7 +42,7 @@ export default function WorkforceRoster() {
     },
     {
       id: '04',
-      icon: <BookOpenCheck className="w-6 h-6 text-[#3B82F6]" />,
+      icon: <BookOpenCheck className="w-6 h-6 text-[var(--navy)]" />,
       name: 'Munim',
       role: 'Khata & Accounts',
       mission: 'Daily cash-to-digital ledger reconciliation, supplier balance tracking, and GST calendar compliance.',
@@ -52,7 +52,7 @@ export default function WorkforceRoster() {
     },
     {
       id: '05',
-      icon: <Users className="w-6 h-6 text-[#3B82F6]" />,
+      icon: <Users className="w-6 h-6 text-[var(--navy)]" />,
       name: 'Meera',
       role: 'Staff & Shifts',
       mission: 'Biometric shift verification, counter cashier allocation, and overtime calculation.',
@@ -62,7 +62,7 @@ export default function WorkforceRoster() {
     },
     {
       id: '06',
-      icon: <Clock className="w-6 h-6 text-[#3B82F6]" />,
+      icon: <Clock className="w-6 h-6 text-[var(--navy)]" />,
       name: 'Expiry Guardian',
       role: 'Inventory Shelf-Life',
       mission: 'Batch expiry tracking, dynamic discount triggers, and zero-waste perishable stock management.',
@@ -99,20 +99,20 @@ export default function WorkforceRoster() {
     <section
       ref={containerRef}
       id="workforce"
-      className="w-full bg-[#050505] text-white py-32 border-t border-white/10 min-h-screen"
+      className="w-full bg-[var(--canvas)] text-[var(--ink)] py-32 border-t border-[var(--line)] min-h-screen"
     >
       {/* Section Header */}
       <div className="px-6 md:px-24 mb-16 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
         <div>
-          <span className="text-xs font-mono text-[#3B82F6] uppercase tracking-[0.3em] mb-4 inline-block border border-[#3B82F6]/30 px-3.5 py-1 rounded-full bg-[#3B82F6]/5">
+          <span className="text-xs font-mono text-[var(--navy)] uppercase tracking-[0.3em] mb-4 inline-block border border-[var(--navy)]/20 px-3.5 py-1 rounded-full bg-[var(--navy)]/5">
             Store Command Center
           </span>
-          <h2 className="text-5xl md:text-8xl font-serif tracking-tight mt-2">
+          <h2 className="text-5xl md:text-8xl font-serif tracking-tight mt-2 text-[var(--ink)]">
             Active Store<br />
-            <span className="italic text-white/40">Workforce.</span>
+            <span className="italic text-[var(--muted)]">Workforce.</span>
           </h2>
         </div>
-        <p className="text-white/60 font-sans max-w-md text-base md:text-lg leading-relaxed">
+        <p className="text-[var(--muted)] font-sans max-w-md text-base md:text-lg leading-relaxed">
           Autonomous specialized agents executing store operations in real-time. Continuous counter telemetry, audio pings, and automated task execution.
         </p>
       </div>
@@ -122,24 +122,24 @@ export default function WorkforceRoster() {
         {agents.map((agent) => (
           <div
             key={agent.id}
-            className="roster-item group relative rounded-2xl bg-[#0A0A0A] border border-white/15 hover:border-white/40 p-6 md:p-8 transition-all duration-300 hover:bg-[#0E0E0E] shadow-[0_4px_24px_rgba(0,0,0,0.4)] hover:shadow-[0_4px_30px_rgba(59,130,246,0.1)] flex flex-col lg:flex-row lg:items-center justify-between gap-6 overflow-hidden will-change-transform cursor-default"
+            className="roster-item group relative rounded-2xl bg-[var(--card)] border border-[var(--line)] hover:border-[var(--sky)]/50 p-6 md:p-8 transition-all duration-300 hover:bg-white shadow-[0_4px_20px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_28px_rgba(0,41,112,0.08)] flex flex-col lg:flex-row lg:items-center justify-between gap-6 overflow-hidden will-change-transform cursor-default"
           >
             {/* Subtle blue accent hover line */}
-            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#3B82F6] scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
+            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[var(--navy)] scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
 
             {/* Left Column: ID + Matching Card SVG Container + Name + Role */}
             <div className="flex items-center gap-5 md:gap-6 min-w-[280px]">
-              <span className="text-xs font-mono text-white/30 group-hover:text-white/70 transition-colors w-6">
+              <span className="text-xs font-mono text-[var(--muted)]/50 group-hover:text-[var(--ink)] transition-colors w-6">
                 {agent.id}
               </span>
-              <div className="w-13 h-13 rounded-2xl bg-white/5 border border-white/20 flex items-center justify-center flex-shrink-0 group-hover:scale-105 group-hover:border-[#3B82F6]/60 transition-all duration-300 shadow-inner">
+              <div className="w-13 h-13 rounded-2xl bg-[var(--canvas)] border border-[var(--line)] flex items-center justify-center flex-shrink-0 group-hover:scale-105 group-hover:border-[var(--sky)]/60 transition-all duration-300 shadow-sm">
                 {agent.icon}
               </div>
               <div className="flex flex-col">
-                <h3 className="text-2xl md:text-3xl font-serif text-white group-hover:text-[#3B82F6] transition-colors">
+                <h3 className="text-2xl md:text-3xl font-serif text-[var(--ink)] group-hover:text-[var(--navy)] transition-colors">
                   {agent.name}
                 </h3>
-                <span className="text-xs font-mono uppercase tracking-wider text-white/50">
+                <span className="text-xs font-mono uppercase tracking-wider text-[var(--muted)]">
                   {agent.role}
                 </span>
               </div>
@@ -147,22 +147,22 @@ export default function WorkforceRoster() {
 
             {/* Center Column: Clean description & Channel */}
             <div className="flex-1 flex flex-col gap-1.5 max-w-xl">
-              <p className="text-sm md:text-base text-white/70 font-sans leading-relaxed">
+              <p className="text-sm md:text-base text-[var(--ink)]/80 font-sans leading-relaxed">
                 {agent.mission}
               </p>
-              <div className="flex items-center gap-2 text-xs font-mono text-white/40">
-                <span className="text-[#3B82F6]">●</span>
+              <div className="flex items-center gap-2 text-xs font-mono text-[var(--muted)]">
+                <span className="text-[var(--sky)]">●</span>
                 <span>Channel: {agent.channel}</span>
               </div>
             </div>
 
             {/* Right Column: Clean Telemetry Metric */}
-            <div className="flex items-center justify-between lg:justify-end gap-6 pt-4 lg:pt-0 border-t border-white/5 lg:border-t-0">
+            <div className="flex items-center justify-between lg:justify-end gap-6 pt-4 lg:pt-0 border-t border-[var(--line)] lg:border-t-0">
               <div className="flex flex-col text-left lg:text-right">
-                <span className="text-xl md:text-2xl font-serif text-white font-medium group-hover:text-white transition-colors">
+                <span className="text-xl md:text-2xl font-serif text-[var(--navy)] font-semibold group-hover:text-[var(--navy)] transition-colors">
                   {agent.metric}
                 </span>
-                <span className="text-xs font-mono text-white/40 uppercase tracking-wider">
+                <span className="text-xs font-mono text-[var(--muted)] uppercase tracking-wider">
                   {agent.metricSub}
                 </span>
               </div>
@@ -174,7 +174,7 @@ export default function WorkforceRoster() {
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
           <a
             href="#contact"
-            className="px-8 py-3.5 rounded-full border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 font-sans text-sm font-medium inline-flex items-center gap-2 shadow-[0_0_20px_rgba(255,255,255,0.08)]"
+            className="px-8 py-3.5 rounded-full border border-[var(--line)] bg-[var(--card)] text-[var(--ink)] hover:bg-[var(--navy)] hover:text-white hover:border-[var(--navy)] transition-all duration-300 font-sans text-sm font-medium inline-flex items-center gap-2 shadow-[0_4px_16px_rgba(15,23,42,0.06)]"
           >
             <PlusCircle className="w-4 h-4" />
             + Hire New Custom Agent (Studio)

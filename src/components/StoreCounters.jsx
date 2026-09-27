@@ -65,20 +65,20 @@ export default function StoreCounters() {
   return (
     <section
       ref={containerRef}
-      className="w-full bg-[#050505] text-white py-24 md:py-32 border-t border-white/5 border-b border-b-white/5 relative z-10"
+      className="w-full bg-[var(--card)] text-[var(--ink)] py-24 md:py-32 border-t border-[var(--line)] border-b border-b-[var(--line)] relative z-10"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-24 grid grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 text-left md:text-center">
         {metrics.map((m, idx) => (
           <div key={idx} className="flex flex-col gap-2 md:items-center group">
-            <h4 className="text-4xl md:text-6xl font-serif tracking-tight text-white mb-1 flex items-baseline md:justify-center">
-              {m.prefix && <span className="text-white/40 text-3xl md:text-5xl mr-1">{m.prefix}</span>}
-              <span className="counter-val text-[#3B82F6]">0</span>
-              {m.suffix && <span className="text-white/60 text-2xl md:text-4xl ml-1">{m.suffix}</span>}
+            <h4 className="text-4xl md:text-6xl font-serif tracking-tight text-[var(--ink)] mb-1 flex items-baseline md:justify-center">
+              {m.prefix && <span className="text-[var(--muted)] text-3xl md:text-5xl mr-1">{m.prefix}</span>}
+              <span className="counter-val text-[var(--navy)]">0</span>
+              {m.suffix && <span className="text-[var(--sky)] text-2xl md:text-4xl ml-1">{m.suffix}</span>}
             </h4>
-            <p className="text-xs md:text-sm font-mono text-white/80 uppercase tracking-widest">
+            <p className="text-xs md:text-sm font-mono text-[var(--ink)] font-semibold uppercase tracking-widest">
               {m.label}
             </p>
-            <span className="text-xs font-sans text-white/40">
+            <span className="text-xs font-sans text-[var(--muted)]">
               {m.detail}
             </span>
           </div>

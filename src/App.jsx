@@ -45,7 +45,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="bg-[#050505] text-white min-h-screen selection:bg-[#3B82F6] selection:text-white font-sans antialiased overflow-x-hidden">
+    <div className="bg-[var(--canvas)] text-[var(--ink)] min-h-screen selection:bg-[var(--sky)] selection:text-white font-sans antialiased overflow-x-hidden">
       {/* Custom Interactive Magnetic Cursor */}
       <CustomCursor />
 
